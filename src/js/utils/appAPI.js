@@ -23,5 +23,20 @@ module.exports = {
 				console.log(err);
 			 }.bind(this)
          });
+    },
+    
+    removeNote : function(noteId){
+        $.ajax({
+            url : "",
+            async : true,
+            timeout : 300000,
+            success : function(data){
+                console.log('Note deleted');
+             }.bind(this),
+             error: function(xhr, status, err){
+				console.log(err);
+			 }.bind(this)
+        });
     }
+    
 };

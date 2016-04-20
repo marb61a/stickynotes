@@ -65,6 +65,8 @@ AppDispatcher.register(function(payload){
 			AppStore.emit(CHANGE_EVENT);
 		break;
     }
+    
+    return true;
 });
 
 module.exports = AppStore;
